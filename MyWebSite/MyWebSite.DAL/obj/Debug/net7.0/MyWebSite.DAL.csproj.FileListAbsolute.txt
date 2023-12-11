@@ -1,0 +1,14 @@
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\bin\Debug\net7.0\MyWebSite.DAL.deps.json
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\bin\Debug\net7.0\MyWebSite.DAL.runtimeconfig.json
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\bin\Debug\net7.0\MyWebSite.DAL.dll
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\bin\Debug\net7.0\MyWebSite.DAL.pdb
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\MyWebSite.DAL.csproj.AssemblyReference.cache
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\MyWebSite.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\MyWebSite.DAL.AssemblyInfoInputs.cache
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\MyWebSite.DAL.AssemblyInfo.cs
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\MyWebSite.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\MyWebSite.DAL.dll
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\refint\MyWebSite.DAL.dll
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\MyWebSite.DAL.pdb
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\MyWebSite.DAL.genruntimeconfig.cache
+C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.DAL\obj\Debug\net7.0\ref\MyWebSite.DAL.dll
