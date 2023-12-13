@@ -11,6 +11,7 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.11",
+          "MyWebSite.BL": "1.0.0",
           "MyWebSite.DAL": "1.0.0"
         },
         "runtime": {
@@ -2489,6 +2490,14 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "MyWebSite.BL/1.0.0": {
+        "dependencies": {
+          "MyWebSite.DAL": "1.0.0"
+        },
+        "runtime": {
+          "MyWebSite.BL.dll": {}
+        }
+      },
       "MyWebSite.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14"
@@ -4051,6 +4060,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "MyWebSite.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MyWebSite.DAL/1.0.0": {
       "type": "project",

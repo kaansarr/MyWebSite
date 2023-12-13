@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vahCGCUJNrCpHt+z36Y1VligilZqrmnqoPLphC/RimWgK2CDn75X2RuHinam2qMDDjiFJ8+lAKHr3Hl372zzRA==",
+  "dgSpecHash": "CL23BqfNRSTj8xO1RiwsqpLctGZ+i2+JHqTdK8ITl50kUWYlOwvBS/n7KabvUjuPSjYdgKfDpZMGMDTQGUQ2VQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.WebUI\\MyWebSite.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\MyWebSite.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kaan\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Kaan\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

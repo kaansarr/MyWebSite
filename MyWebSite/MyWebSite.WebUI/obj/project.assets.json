@@ -3842,6 +3842,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "MyWebSite.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MyWebSite.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyWebSite.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyWebSite.BL.dll": {}
+        }
+      },
       "MyWebSite.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -11176,6 +11189,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "MyWebSite.BL/1.0.0": {
+      "type": "project",
+      "path": "../MyWebSite.BL/MyWebSite.BL.csproj",
+      "msbuildProject": "../MyWebSite.BL/MyWebSite.BL.csproj"
+    },
     "MyWebSite.DAL/1.0.0": {
       "type": "project",
       "path": "../MyWebSite.DAL/MyWebSite.DAL.csproj",
@@ -11187,6 +11205,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.14",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.11",
+      "MyWebSite.BL >= 1.0.0",
       "MyWebSite.DAL >= 1.0.0"
     ]
   },
@@ -11196,11 +11215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.WebUI\\MyWebSite.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\MyWebSite.WebUI.csproj",
       "projectName": "MyWebSite.WebUI",
-      "projectPath": "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.WebUI\\MyWebSite.WebUI.csproj",
+      "projectPath": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\MyWebSite.WebUI.csproj",
       "packagesPath": "C:\\Users\\Kaan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.WebUI\\obj\\",
+      "outputPath": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kaan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11217,8 +11236,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.DAL\\MyWebSite.DAL.csproj": {
-              "projectPath": "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.DAL\\MyWebSite.DAL.csproj"
+            "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.BL\\MyWebSite.BL.csproj": {
+              "projectPath": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.BL\\MyWebSite.BL.csproj"
+            },
+            "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.DAL\\MyWebSite.DAL.csproj": {
+              "projectPath": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.DAL\\MyWebSite.DAL.csproj"
             }
           }
         }

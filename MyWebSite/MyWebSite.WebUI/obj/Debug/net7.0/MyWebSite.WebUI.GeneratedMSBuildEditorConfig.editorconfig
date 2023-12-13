@@ -9,53 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyWebSite.WebUI
 build_property.RootNamespace = MyWebSite.WebUI
-build_property.ProjectDir = C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.WebUI\
+build_property.ProjectDir = C:\Users\Kaan\Documents\GitHub\MyWebSite\MyWebSite\MyWebSite.WebUI\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Kaan\Desktop\MyWebSite\MyWebSite.WebUI
+build_property.MSBuildProjectDirectory = C:\Users\Kaan\Documents\GitHub\MyWebSite\MyWebSite\MyWebSite.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Home/Index.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Home/Login.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Shared/_Layout.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/_ViewStart.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Views/Home/Index.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Views/Home/Privacy.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Views/Shared/Error.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Views/_ViewImports.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Views/_ViewStart.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kaan/Desktop/MyWebSite/MyWebSite.WebUI/Views/Shared/_Layout.cshtml]
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mg4l75aqt8

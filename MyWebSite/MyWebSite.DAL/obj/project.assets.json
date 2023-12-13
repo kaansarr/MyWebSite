@@ -2890,11 +2890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.DAL\\MyWebSite.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.DAL\\MyWebSite.DAL.csproj",
       "projectName": "MyWebSite.DAL",
-      "projectPath": "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.DAL\\MyWebSite.DAL.csproj",
+      "projectPath": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.DAL\\MyWebSite.DAL.csproj",
       "packagesPath": "C:\\Users\\Kaan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kaan\\Desktop\\MyWebSite\\MyWebSite.DAL\\obj\\",
+      "outputPath": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kaan\\AppData\\Roaming\\NuGet\\NuGet.Config",

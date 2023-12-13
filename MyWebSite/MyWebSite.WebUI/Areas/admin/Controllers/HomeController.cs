@@ -12,7 +12,14 @@ namespace MyWebSite.WebUI.Areas.admin.Controllers
             return View();
         }
         [Route("/admin/login"),AllowAnonymous]
-        public IActionResult Login()
+        public IActionResult Login(string ReturnUrl)
+        {
+            ViewBag.ReturnUrl = ReturnUrl;
+            return View();
+        }
+
+        [Route("/admin/login"),HttpPost,AllowAnonymous]
+        public IActionResult Login(string Username,string Password,string ReturnUrl )
         {
             return View();
         }
