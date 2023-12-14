@@ -27,5 +27,23 @@ namespace MyWebSite.WebUI.Areas.admin.Controllers
 		{
 			return View();
 		}
+
+		[Route("admin/hakkimda/yeni"),HttpPost]
+		public IActionResult New(Hakkimda model)
+		{
+            repoHakkimda.Add(model);
+            return Redirect("/admin/hakkimda");
+			
+		}
+
+		[Route("admin/hakkimda/sil")]
+		public IActionResult Delete(int id)
+		{
+			Hakkimda hakkimda = repoHakkimda.GetBy(x=>x.ID==id) ?? null ;
+			if(hakkimda!=null) repoHakkimda.Delete(hakkimda);
+
+			return Redirect("/admin/hakkimda");
+
+		}
 	}
 }

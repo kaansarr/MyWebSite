@@ -17,7 +17,7 @@ namespace MyWebSite.BL.Repositories
             db = _db;
         }
 
-        public async Task Add(T entity)
+        public async  Task Add(T entity)
         {
            await db.AddAsync(entity);
            await db.SaveChangesAsync();

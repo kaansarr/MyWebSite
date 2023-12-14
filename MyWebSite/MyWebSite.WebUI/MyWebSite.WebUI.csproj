@@ -20,8 +20,4 @@
     <ProjectReference Include="..\MyWebSite.DAL\MyWebSite.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\admin\" />
-  </ItemGroup>
-
 </Project>

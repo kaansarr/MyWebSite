@@ -13,14 +13,25 @@
 					</div>
 					<div class="x_content">
 						<br />
-						<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+						<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" asp-area="admin" asp-controller="Hakkimda" asp-action="New" method="post">
 
 							<div class="item form-group">
 								<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name" asp-for="@Model.Baslik">
 									
 								</label>
-								<div class="col-md-6 col-sm-12 ">
+								<div class="col-md-4 col-sm-4 ">
 									<input class="form-control" asp-for="@Model.Baslik" />
+									<span asp-validation-for="@Model.Baslik"></span>
+								</div>
+							</div>
+
+							<div class="item form-group">
+								<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name" asp-for="@Model.Aciklama">
+
+								</label>
+								<div class="col-md-4 col-sm-4 ">
+									<input class="form-control" asp-for="@Model.Aciklama" />
+									<span asp-validation-for="@Model.Aciklama"></span>
 								</div>
 							</div>
 						
