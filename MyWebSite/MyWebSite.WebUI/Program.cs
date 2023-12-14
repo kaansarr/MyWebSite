@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped(typeof(IRepository<>),typeof(SqlRepository<>));
 builder.Services.AddDbContext<SqlContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("CS1")));
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(opt =>
+builder.Services.AddAuthentication().AddCookie(opt =>
 {
     opt.ExpireTimeSpan= TimeSpan.FromMinutes(60);
     opt.LoginPath = "/admin/login";
