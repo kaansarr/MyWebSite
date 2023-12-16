@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1IKJmTcrStXrEfhZc5bcx8Ab11Pcq1oZyag28ZqZGaE=",
+  "Hash": "fnS0fFDi2g5sdNOphAWHNQUjUAWvSSj/ouJoP38gWo4=",
   "Source": "MyWebSite.WebUI",
   "BasePath": "_content/MyWebSite.WebUI",
   "Mode": "Default",
@@ -508,6 +508,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\images\\visa.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\admin\\vendors\\admin.js",
+      "SourceId": "MyWebSite.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\",
+      "BasePath": "_content/MyWebSite.WebUI",
+      "RelativePath": "admin/vendors/admin.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\vendors\\admin.js"
     },
     {
       "Identity": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\admin\\vendors\\animate.css\\.bower.json",

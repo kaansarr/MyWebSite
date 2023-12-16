@@ -29,9 +29,9 @@ namespace MyWebSite.WebUI.Areas.admin.Controllers
 		}
 
 		[Route("admin/hakkimda/yeni"),HttpPost]
-		public IActionResult New(Hakkimda model)
+		public async Task <IActionResult> New(Hakkimda model)
 		{
-            repoHakkimda.Add(model);
+           await repoHakkimda.Add(model);
             return Redirect("/admin/hakkimda");
 			
 		}

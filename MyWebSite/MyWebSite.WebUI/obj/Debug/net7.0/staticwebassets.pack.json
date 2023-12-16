@@ -4629,6 +4629,10 @@
       "PackagePath": "staticwebassets\\admin\\vendors\\Flot\\update_docs.js"
     },
     {
+      "Id": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\admin\\vendors\\admin.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\admin.js"
+    },
+    {
       "Id": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\admin\\vendors\\animate.css\\.bower.json",
       "PackagePath": "staticwebassets\\admin\\vendors\\animate.css\\.bower.json"
     },
