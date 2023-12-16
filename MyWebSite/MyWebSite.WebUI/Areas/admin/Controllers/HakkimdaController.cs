@@ -35,14 +35,36 @@ namespace MyWebSite.WebUI.Areas.admin.Controllers
             return Redirect("/admin/hakkimda");
 			
 		}
-
-		[Route("admin/hakkimda/sil")]
-		public IActionResult Delete(int id)
+		[Route("admin/hakkimda/duzenle")]
+		public IActionResult Edit(int id)
 		{
-			Hakkimda hakkimda = repoHakkimda.GetBy(x=>x.ID==id) ?? null ;
-			if(hakkimda!=null) repoHakkimda.Delete(hakkimda);
+			return View(repoHakkimda.GetBy(x=>x.ID==id));
+		}
 
+		[Route("admin/hakkimda/duzenle"), HttpPost]
+		public async Task<IActionResult> Edit(Hakkimda model)
+		{
+			await repoHakkimda.Update(model);
 			return Redirect("/admin/hakkimda");
+
+		}
+
+		[Route("/admin/hakkimda/sil"), HttpPost]
+		public async Task<string> Delete(int id)
+		{
+			try
+			{
+				Hakkimda hakkimda = repoHakkimda.GetBy(x => x.ID == id) ?? null;
+				if (hakkimda != null) await repoHakkimda.Delete(hakkimda);
+				return "OK";
+			}
+			catch (Exception ex)
+			{
+
+				return ex.Message;
+
+			}
+
 
 		}
 	}
