@@ -84,6 +84,24 @@ namespace MyWebSite.DAL.Migrations
 
                     b.ToTable("Hakkimda");
                 });
+
+            modelBuilder.Entity("MyWebSite.DAL.Entities.Yeteneklerim", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("Baslik")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Yeteneklerim");
+                });
 #pragma warning restore 612, 618
         }
     }

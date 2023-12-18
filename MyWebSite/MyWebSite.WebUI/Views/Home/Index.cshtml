@@ -1,14 +1,26 @@
 ﻿@model IndexVM
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+</head>
+
+
+
+
+
 <section class="section about-me" data-section="section1">
     <div class="container">
         <div class="section-heading">
             <h2>Hakkımda</h2>
             <div class="line-dec"></div>
             <span>
-                
+
             </span>
         </div>
-       @foreach (Hakkimda h in Model.Hakkimda)
+        @foreach (Hakkimda h in Model.Hakkimda)
         {
             <div class="left-image-post">
                 <div class="row">
@@ -17,11 +29,17 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <div class="right-text">
-                            <h4>Reflux HTML CSS Template</h4>
-                            <p>
-                                @h.Aciklama
-                            </p>
+                        <div class="right-text text-center">
+
+
+                            <br />
+                            <br />
+
+                            <h4 style="font-size: 30px;">@h.Aciklama</h4>
+
+                            <br />
+
+                            <h4>Şişli/İstanbul-(554) (442 7898)-kaansar33@gmail.com</h4>
                             <div class="white-button">
                             </div>
                         </div>
@@ -29,89 +47,32 @@
                 </div>
             </div>
         }
-        <div class="right-image-post">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="left-text">
-                        <h4>Sed sagittis rhoncus velit</h4>
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et
-                            malesuada fames ac turpis egestas. Vestibulum fermentum
-                            eleifend nibh, vitae sodales elit finibus pretium.
-                            Suspendisse potenti. Ut sollicitudin risus a sollicitudin
-                            semper.
-                        </p>
-                        <div class="white-button">
-                          
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="right-image">
-                        <img src="/assets/images/right-image.jpg" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
     </div>
 </section>
 
 <section class="section my-services" data-section="section2">
     <div class="container">
         <div class="section-heading">
-            <h2>What I’m good at?</h2>
+            <h2>Yeteneklerim</h2>
             <div class="line-dec"></div>
-            <span>
-                Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.
-                Vestibulum congue leo et tellus aliquam, eu viverra nulla semper.
-                Nullam eu faucibus diam. Donec eget massa ante.
-            </span>
+
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="service-item">
-                    <div class="first-service-icon service-icon"></div>
-                    <h4>HTML5 &amp; CSS3</h4>
-                    <p>
-                        Phasellus non convallis dolor. Integer tempor hendrerit arcu
-                        at bibendum. Sed ac ante non metus vehicula congue quis eget
-                        eros.
-                    </p>
+            @foreach (Yeteneklerim y in Model.Yeteneklerim)
+            {
+                <div class="col-md-6">
+                    <div class="service-item">
+                       
+                        <i class="fa-solid fa-computer" style="font-size: 50px;"></i>
+
+                        <h4>@y.Baslik</h4>
+                        
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="service-item">
-                    <div class="second-service-icon service-icon"></div>
-                    <h4>Creative Ideas</h4>
-                    <p>
-                        Proin lacus massa, eleifend sed fermentum in, dignissim vel
-                        metus. Nunc accumsan leo nec felis porttitor, ultricies
-                        faucibus purus mollis.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="service-item">
-                    <div class="third-service-icon service-icon"></div>
-                    <h4>Easy Customize</h4>
-                    <p>
-                        Integer suscipit condimentum aliquet. Nam quis risus metus.
-                        Nullam faucibus quam eget arcu pretium tincidunt. Nam libero
-                        dui.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="service-item">
-                    <div class="fourth-service-icon service-icon"></div>
-                    <h4>Admin Dashboard</h4>
-                    <p>
-                        Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
-                        eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
-                        leo nec felis porttitor.
-                    </p>
-                </div>
-            </div>
+            }
+
         </div>
     </div>
 </section>
@@ -328,3 +289,6 @@
         </div>
     </div>
 </section>
+
+
+</html>

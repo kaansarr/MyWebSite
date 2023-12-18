@@ -17,6 +17,7 @@ namespace MyWebSite.DAL.Contexts
         
         public DbSet<Hakkimda> Hakkimda { get; set; }  
         public DbSet<Admin> Admin { get; set; }
+        public DbSet<Yeteneklerim> Yeteneklerim { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
