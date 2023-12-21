@@ -10,10 +10,12 @@ namespace MyWebSite.WebUI.Controllers
         IRepository<Hakkimda> repoHakkimda;
         IRepository<Yeteneklerim> repoYeteneklerim;
 
-        public HomeController(IRepository<Hakkimda> _repoHakkimda, IRepository<Yeteneklerim> _repoYeteneklerim)
+        
+        public HomeController( IRepository<Yeteneklerim> _repoYeteneklerim,IRepository<Hakkimda> _repoHakkimda )
         {
-            repoHakkimda = _repoHakkimda;
+            
             repoYeteneklerim = _repoYeteneklerim;
+            repoHakkimda= _repoHakkimda;
         }
         public IActionResult Index()
         {
