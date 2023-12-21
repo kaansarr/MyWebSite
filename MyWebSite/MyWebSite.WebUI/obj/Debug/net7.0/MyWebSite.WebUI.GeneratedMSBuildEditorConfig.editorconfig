@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Kaan\Documents\GitHub\MyWebSite\MyWebSite\MyWebSite.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Egitim/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcRWdpdGltXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Egitim/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcRWdpdGltXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Egitim/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcRWdpdGltXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kaan/Documents/GitHub/MyWebSite/MyWebSite/MyWebSite.WebUI/Areas/admin/Views/Hakkimda/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYWRtaW5cVmlld3NcSGFra2ltZGFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,79 @@
+﻿@model Egitim
+
+
+<div class="right_col" role="main" style="padding:0">
+	
+	<div class="">
+		
+		
+		<div class="row">
+			<div class="col-md-12 col-sm-12 ">
+				<div class="x_panel">
+					<div class="x_title">
+						<h2>Hakkımda <small>Yeni Bilgi Ekle</small></h2>
+						
+						<div class="clearfix"></div>
+					</div>
+					<div class="x_content">
+						<br />
+						<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" asp-area="admin" asp-controller="Egitim" asp-action="New" method="post">
+
+							<div class="item form-group">
+								<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name" asp-for="@Model.Okul">
+									
+								</label>
+								<div class="col-md-4 col-sm-4 ">
+									<input class="form-control" asp-for="@Model.Okul" />
+									<span asp-validation-for="@Model.Okul"></span>
+								</div>
+							</div>
+
+							<div class="item form-group">
+								<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name" asp-for="@Model.Fakulte">
+
+								</label>
+								<div class="col-md-4 col-sm-4 ">
+									<input class="form-control" asp-for="@Model.Fakulte" />
+									<span asp-validation-for="@Model.Fakulte"></span>
+								</div>
+							</div>
+
+							<div class="item form-group">
+								<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name" asp-for="@Model.Bolum">
+
+								</label>
+								<div class="col-md-4 col-sm-4 ">
+									<input class="form-control" asp-for="@Model.Bolum" />
+									<span asp-validation-for="@Model.Bolum"></span>
+								</div>
+							</div>
+
+							<div class="item form-group">
+								<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name" asp-for="@Model.Tarih">
+
+								</label>
+								<div class="col-md-4 col-sm-4 ">
+									<input class="form-control" asp-for="@Model.Tarih" />
+									<span asp-validation-for="@Model.Tarih"></span>
+								</div>
+							</div>
+						
+							<div class="ln_solid"></div>
+							<div class="item form-group">
+								<div class="col-md-6 col-sm-6 offset-md-3">
+									<a asp-area="admin" asp-controller="Egitim" asp-action="Index" class="btn btn-primary" type="button">İptal</a>
+									<button class="btn btn-primary" type="reset">Temizle</button>
+									<button type="submit" class="btn btn-success">Ekle</button>
+								</div>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+	</div>
+</div>
+<!-- /page content -->
