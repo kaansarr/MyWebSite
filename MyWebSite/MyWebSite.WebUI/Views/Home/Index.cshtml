@@ -15,11 +15,77 @@
 
 
 
-@await Html.PartialAsync("/Views/Shared/Partial/Hakkimda.cshtml")
+<section class="section about-me" data-section="section1">
+	<div class="container">
+		<div class="section-heading">
+			<h2>Hakkımda</h2>
+			<div class="line-dec"></div>
+			<span>
+
+			</span>
+		</div>
+		@foreach (Hakkimda h in Model.Hakkimda)
+		{
+			<div class="left-image-post">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="left-image">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="right-text text-center">
+
+
+							<br />
+							<br />
+
+							<h4 style="font-size: 30px;">@h.Aciklama</h4>
+
+							<br />
+
+							<h4>Şişli/İstanbul-(554) (442 7898)-kaansar33@gmail.com</h4>
+							<div class="white-button">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		}
+
+
+	</div>
+</section>
 
 
 
-@await Html.PartialAsync("/Views/Shared/Partial/Yeteneklerim.cshtml")
+
+<section class="section my-services" data-section="section2">
+	<div class="container">
+		<div class="section-heading">
+			<h2>Yeteneklerim</h2>
+			<div class="line-dec"></div>
+
+		</div>
+		<div class="row">
+			@foreach (Yeteneklerim y in Model.Yeteneklerim)
+			{
+				<div class="col-md-6">
+					<div class="service-item">
+
+						<span class="material-symbols-outlined" style="font-size:50px">
+							keyboard
+						</span>
+
+						<h4>@y.Baslik</h4>
+
+					</div>
+				</div>
+			}
+
+		</div>
+	</div>
+</section>
+
 
 
 
@@ -249,20 +315,27 @@
 		</div>
 
 
-		<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-			<div class="flex-grow-1">
-				<h3 class="mb-0">OKUL</h3>
-				<div class="subheading mb-3">Fakülte</div>
-				<div>Bölüm</div>
+		@foreach (Egitim e in Model.Egitimlerim)
+		{
+			<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+				<div class="flex-grow-1">
+					<h3 class="mb-0">@e.Okul</h3>
+					<div class="subheading mb-3">@e.Fakulte</div>
+					<div>@e.Bolum</div>
+
+				</div>
+				<div class="flex-shrink-0"><span class="text-primary">@e.Tarih</span></div>
+
 
 			</div>
-			<div class="flex-shrink-0"><span class="text-primary">mezun</span></div>
+		}
 
 
-		</div>
 
 
 	</div>
 </section>
+
+
 
 </html>

@@ -9,11 +9,12 @@ namespace MyWebSite.WebUI.Controllers
     {
         IRepository<Hakkimda> repoHakkimda;
         IRepository<Yeteneklerim> repoYeteneklerim;
+        IRepository<Egitim> repoEgitimlerim;
 
         
-        public HomeController( IRepository<Yeteneklerim> _repoYeteneklerim,IRepository<Hakkimda> _repoHakkimda )
+        public HomeController( IRepository<Yeteneklerim> _repoYeteneklerim,IRepository<Hakkimda> _repoHakkimda, IRepository<Egitim> _repoEgitimlerim  )
         {
-            
+            repoEgitimlerim = _repoEgitimlerim;
             repoYeteneklerim = _repoYeteneklerim;
             repoHakkimda= _repoHakkimda;
         }
@@ -21,6 +22,7 @@ namespace MyWebSite.WebUI.Controllers
         {
             IndexVM indexVM = new IndexVM
             {
+                Egitimlerim = repoEgitimlerim.GetAll(),
                 Hakkimda = repoHakkimda.GetAll(),
                 Yeteneklerim=repoYeteneklerim.GetAll(),
                 
