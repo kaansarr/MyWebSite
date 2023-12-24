@@ -118,6 +118,38 @@ namespace MyWebSite.DAL.Migrations
                     b.ToTable("Hakkimda");
                 });
 
+            modelBuilder.Entity("MyWebSite.DAL.Entities.Iletisim", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("Ad")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Konu")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Mesaj")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Soyad")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Iletisim");
+                });
+
             modelBuilder.Entity("MyWebSite.DAL.Entities.Yeteneklerim", b =>
                 {
                     b.Property<int>("ID")

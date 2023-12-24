@@ -10,13 +10,15 @@ namespace MyWebSite.WebUI.Controllers
         IRepository<Hakkimda> repoHakkimda;
         IRepository<Yeteneklerim> repoYeteneklerim;
         IRepository<Egitim> repoEgitimlerim;
+        IRepository<Iletisim> repoIletisim;
 
         
-        public HomeController( IRepository<Yeteneklerim> _repoYeteneklerim,IRepository<Hakkimda> _repoHakkimda, IRepository<Egitim> _repoEgitimlerim  )
+        public HomeController( IRepository<Yeteneklerim> _repoYeteneklerim,IRepository<Hakkimda> _repoHakkimda, IRepository<Egitim> _repoEgitimlerim, IRepository<Iletisim> _repoIletisim)
         {
             repoEgitimlerim = _repoEgitimlerim;
             repoYeteneklerim = _repoYeteneklerim;
             repoHakkimda= _repoHakkimda;
+            repoIletisim= _repoIletisim;
         }
         public IActionResult Index()
         {
@@ -29,5 +31,22 @@ namespace MyWebSite.WebUI.Controllers
             };
             return View(indexVM);
         }
-    }
+       [HttpGet]
+       public PartialViewResult Iletisim()
+        {
+            return PartialView();
+        }
+
+		[HttpPost]
+		public PartialViewResult Iletisim(Iletisim t)
+		{
+            repoIletisim.Add(t);
+			return PartialView();
+		}
+
+
+
+
+
+	}
 }

@@ -19,6 +19,7 @@ namespace MyWebSite.DAL.Contexts
         public DbSet<Admin> Admin { get; set; }
         public DbSet<Yeteneklerim> Yeteneklerim { get; set; }
         public DbSet<Egitim> Egitimlerim { get; set; }
+        public DbSet<Iletisim> Iletisim { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
