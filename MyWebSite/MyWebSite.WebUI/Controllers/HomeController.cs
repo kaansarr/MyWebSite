@@ -31,18 +31,21 @@ namespace MyWebSite.WebUI.Controllers
             };
             return View(indexVM);
         }
-       [HttpGet]
-       public PartialViewResult Iletisim()
+        [HttpGet]
+        public PartialViewResult Iletisim()
         {
             return PartialView();
         }
 
+		
 		[HttpPost]
-		public PartialViewResult Iletisim(Iletisim t)
+		public ActionResult Iletisim(Iletisim t)
 		{
-            repoIletisim.Add(t);
-			return PartialView();
+			repoIletisim.Add(t);
+			return Redirect("/");
 		}
+
+
 
 
 
