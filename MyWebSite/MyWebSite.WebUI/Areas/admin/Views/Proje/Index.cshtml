@@ -1,0 +1,111 @@
+﻿@model IEnumerable<Proje>
+<div class="right_col" role="main">
+	<div class="">
+		<div class="page-title">
+			<div class="title_left">
+				<h3>Hakkımda </h3>
+			</div>
+
+
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="row" style="display: block;">
+
+
+
+
+
+
+			<div class="col-md-12 col-sm-12  ">
+				<div class="x_panel">
+					<div class="x_title">
+
+
+						<div class="clearfix"></div>
+					</div>
+
+					<div class="x_content">
+						<a asp-area="admin" asp-controller="Proje" asp-action="New" class="btn btn-success" style="float:right;color:#fff">Yeni Bilgi Ekle</a>
+
+
+						<div class="table-responsive">
+							<table class="table table-striped jambo_table bulk_action">
+								<thead>
+									<tr class="headings">
+
+										<th class="column-title">İsim </th>
+										<th class="column-title">Resim </th>
+										<th class="column-title">Link </th>
+										<th class="column-title">Link2 </th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+
+
+								</thead>
+
+								<tbody>
+									@foreach (Proje s in Model)
+									{
+										<tr class="even pointer">
+											<td class="a-right a-right ">@s.Name</td>
+											<td class="a-right a-right ">@s.Picture</td>
+											<td class="a-right a-right ">@s.Link</td>
+											<td class="a-right a-right ">@s.Link2</td>
+
+
+
+											<td>
+												
+
+												<a class="btn btn-danger educationDelete" style="float:right;color:#fff; margin-left: 5px;" rowID="@s.ID">Sil</a>
+
+
+												<a asp-controller="Proje" asp-action="Edit" asp-route-id="@s.ID" class="btn btn-success" style="float:right;color:#fff">Düzenle</a>
+											</td>
+											<td></td>
+											<td></td>
+											<td></td>
+
+
+
+										</tr>
+									}
+
+
+
+
+								</tbody>
+							</table>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal" id="modelDelete" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">DİKKAT!...</h5>
+			</div>
+			<div class="modal-body">
+				<p>Silmek İstediğinizden Emin Misiniz ?</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="$(this).closest('.modal').modal('hide')">Hayır</button>
+				<button type="button" class="btn btn-primary" onclick="deleteEducation(silinecekID)">Evet</button>
+
+
+			</div>
+		</div>
+	</div>
+</div>

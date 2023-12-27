@@ -20,7 +20,7 @@ namespace MyWebSite.DAL.Contexts
         public DbSet<Yeteneklerim> Yeteneklerim { get; set; }
         public DbSet<Egitim> Egitimlerim { get; set; }
         public DbSet<Iletisim> Iletisim { get; set; }
-        public DbSet<Projelerim> Projelerim { get; set; }
+        public DbSet<Proje> Projelerim { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
