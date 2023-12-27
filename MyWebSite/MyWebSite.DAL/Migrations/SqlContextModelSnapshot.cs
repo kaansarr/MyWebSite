@@ -150,6 +150,35 @@ namespace MyWebSite.DAL.Migrations
                     b.ToTable("Iletisim");
                 });
 
+            modelBuilder.Entity("MyWebSite.DAL.Entities.Projelerim", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("Link")
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("Link2")
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("Picture")
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Projelerim");
+                });
+
             modelBuilder.Entity("MyWebSite.DAL.Entities.Yeteneklerim", b =>
                 {
                     b.Property<int>("ID")
