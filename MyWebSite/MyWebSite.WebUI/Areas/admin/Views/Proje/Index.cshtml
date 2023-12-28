@@ -35,7 +35,7 @@
 								<thead>
 									<tr class="headings">
 
-										<th class="column-title">İsim </th>
+										<th class="column-title">Adı </th>
 										<th class="column-title">Resim </th>
 										<th class="column-title">Link </th>
 										<th class="column-title">Link2 </th>
@@ -52,7 +52,13 @@
 									{
 										<tr class="even pointer">
 											<td class="a-right a-right ">@s.Name</td>
-											<td class="a-right a-right ">@s.Picture</td>
+											<td class="a-right a-right ">
+												@if (!string.IsNullOrEmpty(s.Picture))
+												{
+													<img src="@s.Picture" width="100" />
+												}
+											</td>
+											
 											<td class="a-right a-right ">@s.Link</td>
 											<td class="a-right a-right ">@s.Link2</td>
 
@@ -61,7 +67,7 @@
 											<td>
 												
 
-												<a class="btn btn-danger educationDelete" style="float:right;color:#fff; margin-left: 5px;" rowID="@s.ID">Sil</a>
+												<a class="btn btn-danger projectDelete" style="float:right;color:#fff; margin-left: 5px;" rowID="@s.ID">Sil</a>
 
 
 												<a asp-controller="Proje" asp-action="Edit" asp-route-id="@s.ID" class="btn btn-success" style="float:right;color:#fff">Düzenle</a>
@@ -102,7 +108,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="$(this).closest('.modal').modal('hide')">Hayır</button>
-				<button type="button" class="btn btn-primary" onclick="deleteEducation(silinecekID)">Evet</button>
+				<button type="button" class="btn btn-primary" onclick="deleteProject(silinecekID)">Evet</button>
 
 
 			</div>

@@ -13,8 +13,10 @@
 					</div>
 					<div class="x_content">
 						<br />
-						<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" asp-area="admin" asp-controller="Proje" asp-action="Edit" method="post">
+						<form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" asp-area="admin" asp-controller="Proje" asp-action="Edit" method="post" enctype="multipart/form-data">
 							<input type="hidden" asp-for="@Model.ID" />
+							<input type="hidden" asp-for="@Model.Picture" />
+
 							
 
 							<div class="item form-group">
@@ -32,7 +34,7 @@
 
 								</label>
 								<div class="col-md-4 col-sm-4 ">
-									<input class="form-control" asp-for="@Model.Picture" />
+									<input type="file" class="form-control" asp-for="@Model.Picture" />
 									<span asp-validation-for="@Model.Picture"></span>
 								</div>
 							</div>

@@ -87,6 +87,19 @@
 </section>
 
 
+<style>
+	.isotope-box {
+		float: left;
+		width: 75%; /* İhtiyaca göre ayarlayın */
+		box-sizing: border-box;
+		padding: 40px; /* Öğeler arasındaki boşluğu ayarlamak için ihtiyaca göre ayarlayın */
+	}
+
+	.isotope-item {
+		width: 100%;
+	}
+</style>
+
 
 
 
@@ -101,26 +114,33 @@
 		</div>
 		<div class="row">
 			<div class="isotope-wrapper">
-				
-				<div class="isotope-box">
-					<div class="isotope-item" data-type="nature">
-						<figure class="snip1321">
-							<img src="/assets/images/portfolio-01.jpg"
-								 alt="sq-sample26" />
-							<figcaption>
-								<a href="link-for-github" target="_blank">
-									<i class="fa fa-github"></i>
-								</a>
-								<a href="https://www.youtube.com/watch?v=oDQ5tEkOicg" target="_blank">
-									<i class="fa fa-youtube"></i>
-								</a>
-							</figcaption>
+				@foreach (Proje p in Model.Projelerim)
+				{
+					<div class="isotope-box">
+						<div class="isotope-item" data-type="nature">
+							<figure class="snip1321">
+								<img src="@p.Picture" alt="sq-sample26" />
+								<figcaption>
+									<a href="@p.Link" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
 
-						</figure>
+									@if (!string.IsNullOrEmpty(p.Link2))
+									{
+										<a href="@p.Link2" target="_blank">
+											<i class="fa fa-youtube"></i>
+										</a>
+									}
+
+
+								</figcaption>
+							</figure>
+							<h2>@p.Name</h2>
+
+						</div>
 					</div>
 
-					
-				</div>
+				}
 			</div>
 		</div>
 	</div>
@@ -149,7 +169,9 @@
 					<div>@e.Bolum</div>
 
 				</div>
-				<div class="flex-shrink-0"><span class="text-primary">@e.Tarih</span></div>
+				<div class="flex-shrink-0">
+					<span style="color:darkgray;">@e.Tarih</span>
+				</div>
 
 
 			</div>

@@ -11,22 +11,26 @@ namespace MyWebSite.WebUI.Controllers
         IRepository<Yeteneklerim> repoYeteneklerim;
         IRepository<Egitim> repoEgitimlerim;
         IRepository<Iletisim> repoIletisim;
+        IRepository<Proje> repoProje;
 
         
-        public HomeController( IRepository<Yeteneklerim> _repoYeteneklerim,IRepository<Hakkimda> _repoHakkimda, IRepository<Egitim> _repoEgitimlerim, IRepository<Iletisim> _repoIletisim)
+        public HomeController( IRepository<Yeteneklerim> _repoYeteneklerim,IRepository<Hakkimda> _repoHakkimda, IRepository<Egitim> _repoEgitimlerim, IRepository<Iletisim> _repoIletisim, IRepository<Proje> _repoProje)
         {
             repoEgitimlerim = _repoEgitimlerim;
             repoYeteneklerim = _repoYeteneklerim;
             repoHakkimda= _repoHakkimda;
             repoIletisim= _repoIletisim;
+            repoProje = _repoProje;
         }
         public IActionResult Index()
         {
             IndexVM indexVM = new IndexVM
             {
-                Egitimlerim = repoEgitimlerim.GetAll(),
+                Egitimlerim = repoEgitimlerim.GetAll().OrderBy(o => o.ID).ToList()
+,
                 Hakkimda = repoHakkimda.GetAll(),
-                Yeteneklerim=repoYeteneklerim.GetAll(),
+                Yeteneklerim = repoYeteneklerim.GetAll(),
+                Projelerim = repoProje.GetAll()
                 
             };
             return View(indexVM);

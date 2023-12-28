@@ -31,7 +31,23 @@ namespace MyWebSite.WebUI.Areas.admin.Controllers
 		[Route("admin/proje/yeni"),HttpPost]
 		public async Task <IActionResult> New(Proje model)
 		{
-           await repoProje.Add(model);
+
+			if (Request.Form.Files.Any())
+			{
+				if (!Directory.Exists(Path.Combine(Directory.GetCurrentDirectory
+					(), "wwwroot", "img", "proje"))) Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory
+					(), "wwwroot", "img", "proje"));
+
+				string dosyaAdi = (DateTime.Now.Minute + DateTime.Now.Millisecond) + Request.Form.Files["Picture"].FileName;
+				using (FileStream stream=new FileStream(Path.Combine(Directory.GetCurrentDirectory
+					(), "wwwroot", "img", "proje",dosyaAdi),FileMode.Create))
+				{
+					await Request.Form.Files["Picture"].CopyToAsync(stream);
+				}
+				model.Picture = "/img/proje/" + dosyaAdi;
+			}
+
+            await repoProje.Add(model);
             return Redirect("/admin/proje");
 			
 		}
@@ -44,6 +60,22 @@ namespace MyWebSite.WebUI.Areas.admin.Controllers
 		[Route("admin/proje/duzenle"), HttpPost]
 		public async Task<IActionResult> Edit(Proje model)
 		{
+
+			if (Request.Form.Files.Any())
+			{
+				if (!Directory.Exists(Path.Combine(Directory.GetCurrentDirectory
+					(), "wwwroot", "img", "proje"))) Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory
+					(), "wwwroot", "img", "proje"));
+
+				string dosyaAdi = (DateTime.Now.Minute + DateTime.Now.Millisecond) + Request.Form.Files["Picture"].FileName;
+				using (FileStream stream = new FileStream(Path.Combine(Directory.GetCurrentDirectory
+					(), "wwwroot", "img", "proje", dosyaAdi), FileMode.Create))
+				{
+					await Request.Form.Files["Picture"].CopyToAsync(stream);
+				}
+				model.Picture = "/img/proje/" + dosyaAdi;
+			}
+
 			await repoProje.Update(model);
 			return Redirect("/admin/proje");
 

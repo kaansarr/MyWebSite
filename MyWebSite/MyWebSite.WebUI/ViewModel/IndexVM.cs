@@ -7,5 +7,6 @@ namespace MyWebSite.WebUI.ViewModel
 		public IEnumerable  <Hakkimda> Hakkimda { get; set; }
 		public IEnumerable  <Yeteneklerim> Yeteneklerim { get; set; }
 		public IEnumerable  <Egitim> Egitimlerim { get; set; }
+		public IEnumerable  <Proje> Projelerim { get; set; }
 	}
 }
