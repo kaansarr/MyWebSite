@@ -16,6 +16,8 @@ builder.Services.AddAuthentication().AddCookie(opt =>
     opt.LogoutPath= "/admin/logout";
 });
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

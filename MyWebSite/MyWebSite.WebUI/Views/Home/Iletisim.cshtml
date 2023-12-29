@@ -1,4 +1,14 @@
-﻿<section class="section contact-me" data-section="section4">
+﻿<head>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+
+
+</head>
+
+
+<section class="section contact-me" data-section="section4">
 	<div class="container">
 		<div class="section-heading">
 			<h2>Contact Me</h2>
@@ -32,7 +42,7 @@
 							</div>
 							<div class="col-md-12">
 								<fieldset>
-									<button type="submit" id="form-submit" class="button">
+									<button type="button" id="btn1" class="button">
 										Mesaj Gönder
 									</button>
 								</fieldset>
@@ -44,3 +54,47 @@
 		</div>
 	</div>
 </section>
+
+
+<script>
+	$(document).ready(function () {
+		$('#btn1').click(function () {
+			// Formdan verileri al
+			var ad = $('#name').val();
+			var soyad = $('#email').val();
+			var konu = $('#subject').val();
+			var mesaj = $('#message').val();
+
+			// Formu AJAX kullanarak gönder
+			$.ajax({
+				url: '/Home/Iletisim',  // Formun post edileceği URL'yi ayarlayın
+				type: 'POST',
+				data: {
+					Ad: ad,
+					Soyad: soyad,
+					Konu: konu,
+					Mesaj: mesaj
+				},
+				success: function (response) {
+					// AJAX isteği başarılı olduğunda SweetAlert göster
+					Swal.fire(
+						'Merhaba ' + ad + ' ' + soyad,
+						'Mesajınız gönderildi! Teşekkür ederiz.',
+						'success'
+					);
+
+					// Formu sıfırla (isteğe bağlı)
+					$('#contact')[0].reset();
+				},
+				error: function (error) {
+					// AJAX isteği başarısız olduğunda SweetAlert göster
+					Swal.fire(
+						'Hata',
+						'Mesaj gönderirken bir hata oluştu. Lütfen tekrar deneyin.',
+						'error'
+					);
+				}
+			});
+		});
+	});
+</script>
