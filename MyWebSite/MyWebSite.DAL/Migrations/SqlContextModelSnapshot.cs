@@ -150,7 +150,7 @@ namespace MyWebSite.DAL.Migrations
                     b.ToTable("Iletisim");
                 });
 
-            modelBuilder.Entity("MyWebSite.DAL.Entities.Projelerim", b =>
+            modelBuilder.Entity("MyWebSite.DAL.Entities.Proje", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
