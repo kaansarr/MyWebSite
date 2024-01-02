@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cSWBfOqJDMZbwDyYPCm+G+1xIXEX5dftiPauUIcymfI=",
+  "Hash": "vmene379HSDl4l5ydLuNvZPHZG33O7cs9VGSSmi+iS4=",
   "Source": "MyWebSite.WebUI",
   "BasePath": "_content/MyWebSite.WebUI",
   "Mode": "Default",
@@ -78421,6 +78421,40 @@
       "OriginalItemSpec": "wwwroot\\img\\proje\\120B1FF00C0-1ABC-4E7A-89C8-5D10294895F4.jpg"
     },
     {
+      "Identity": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\img\\proje\\185Ekran Görüntüsü (4).png",
+      "SourceId": "MyWebSite.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\",
+      "BasePath": "_content/MyWebSite.WebUI",
+      "RelativePath": "img/proje/185Ekran Görüntüsü (4).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\proje\\185Ekran Görüntüsü (4).png"
+    },
+    {
+      "Identity": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\img\\proje\\240Ekran Görüntüsü (2).png",
+      "SourceId": "MyWebSite.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\",
+      "BasePath": "_content/MyWebSite.WebUI",
+      "RelativePath": "img/proje/240Ekran Görüntüsü (2).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\proje\\240Ekran Görüntüsü (2).png"
+    },
+    {
       "Identity": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\img\\proje\\299emin.jpg",
       "SourceId": "MyWebSite.WebUI",
       "SourceType": "Discovered",
@@ -78504,6 +78538,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\proje\\670WhatsApp Image 2023-08-14 at 15.27.29.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\img\\proje\\734Ekran Görüntüsü (3).png",
+      "SourceId": "MyWebSite.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\",
+      "BasePath": "_content/MyWebSite.WebUI",
+      "RelativePath": "img/proje/734Ekran Görüntüsü (3).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\proje\\734Ekran Görüntüsü (3).png"
     },
     {
       "Identity": "C:\\Users\\Kaan\\Documents\\GitHub\\MyWebSite\\MyWebSite\\MyWebSite.WebUI\\wwwroot\\img\\proje\\738asd.jpg",

@@ -13,20 +13,20 @@ namespace MyWebSite.DAL.Entities
 	{
 		public int ID { get; set; }
 
-		[StringLength(50), Column(TypeName = "varchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Okul")]
+		[StringLength(50), Column(TypeName = "nvarchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Okul")]
 		public string Okul { get; set; }
 
 
-		[StringLength(50), Column(TypeName = "varchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Fakülte")]
+		[StringLength(50), Column(TypeName = "nvarchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Fakülte")]
 
 
 		public string Fakulte { get; set; }
 
-		[StringLength(50), Column(TypeName = "varchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Bölüm")]
+		[StringLength(50), Column(TypeName = "nvarchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Bölüm")]
 
 		public string Bolum { get; set; }
 
-		[StringLength(50), Column(TypeName = "varchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Tarih")]
+		[StringLength(50), Column(TypeName = "nvarchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Tarih")]
 
 		public string Tarih { get; set; }
 

@@ -43,9 +43,9 @@ namespace MyWebSite.WebUI.Controllers
 
 		
 		[HttpPost]
-		public ActionResult Iletisim(Iletisim t)
+		public async Task <IActionResult> Iletisim(Iletisim t)
 		{
-			repoIletisim.Add(t);
+			await repoIletisim.Add(t);
 			return Redirect("/");
 		}
 

@@ -13,15 +13,15 @@ namespace MyWebSite.DAL.Entities
 	{
 		public int ID { get; set; }
 
-		[StringLength(150), Column(TypeName = "varchar(150)"), Display(Name = "Proje Adı")]
+		[StringLength(150), Column(TypeName = "nvarchar(150)"), Display(Name = "Proje Adı")]
 		public string Name { get; set; }
 
-		[StringLength(150), Column(TypeName = "varchar(150)"), Display(Name = "Proje Resmi")]
+		[StringLength(150), Column(TypeName = "nvarchar(150)"), Display(Name = "Proje Resmi")]
 		public string Picture { get; set; }
 
-		[StringLength(150), Column(TypeName = "varchar(150)"), Display(Name = "Bağlantı Linki")]
+		[StringLength(150), Column(TypeName = "nvarchar(150)"), Display(Name = "Bağlantı Linki")]
 		public string Link { get; set; }
-		[StringLength(150), Column(TypeName = "varchar(150)"), Display(Name = "Bağlantı Linki2")]
+		[StringLength(150), Column(TypeName = "nvarchar(150)"), Display(Name = "Bağlantı Linki2")]
 
 		public string Link2 { get; set; }
 	}

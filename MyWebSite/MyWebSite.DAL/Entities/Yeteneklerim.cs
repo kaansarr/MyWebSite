@@ -13,7 +13,7 @@ namespace MyWebSite.DAL.Entities
     {
         public int ID { get; set; }
 
-        [StringLength(50), Column(TypeName = "varchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Başlık")]
+        [StringLength(50), Column(TypeName = "nvarchar(50)"), Required(ErrorMessage = "Boş Geçilemez"), Display(Name = "Başlık")]
         public string Baslik { get; set; }
     }
 }
