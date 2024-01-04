@@ -24,5 +24,7 @@ namespace MyWebSite.DAL.Entities
 		[StringLength(150), Column(TypeName = "nvarchar(150)"), Display(Name = "Bağlantı Linki2")]
 
 		public string Link2 { get; set; }
+		[Display(Name ="Proje Alt Resimleri")]
+		public ICollection<ProjePicture> ProjePictures { get; set; }
 	}
 }

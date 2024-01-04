@@ -21,6 +21,7 @@ namespace MyWebSite.DAL.Contexts
         public DbSet<Egitim> Egitimlerim { get; set; }
         public DbSet<Iletisim> Iletisim { get; set; }
         public DbSet<Proje> Projelerim { get; set; }
+        public DbSet<ProjePicture> ProjePicture { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

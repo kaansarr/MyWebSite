@@ -1,4 +1,5 @@
 ﻿var silinecekID;
+var projeID;
 
 $(".aboutDelete").click(function () {
     silinecekID = $(this).attr("rowID")
@@ -27,6 +28,13 @@ $(".projectDelete").click(function () {
 
 $(".communicationDelete").click(function () {
     silinecekID = $(this).attr("rowID")
+    $("#modelDelete").modal();
+
+});
+
+$(".projePictureDelete").click(function () {
+    silinecekID = $(this).attr("rowID")
+    projeID = $(this).attr("projeID")
     $("#modelDelete").modal();
 
 });
@@ -93,6 +101,18 @@ function deleteCommunication() {
         data: { id: silinecekID },
         success: function (result) {
             if (result == "OK") location.href = "/admin/iletisim";
+            else alert(result);
+        }
+    });
+}
+
+function deleteProjePicture() {
+    $.ajax({
+        type: "POST",
+        url: "/admin/projePicture/sil",
+        data: { id: silinecekID },
+        success: function (result) {
+            if (result == "OK") location.href = "/admin/projePicture?projeid=" + projeID;
             else alert(result);
         }
     });

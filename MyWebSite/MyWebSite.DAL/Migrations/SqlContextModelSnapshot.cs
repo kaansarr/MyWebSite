@@ -179,6 +179,35 @@ namespace MyWebSite.DAL.Migrations
                     b.ToTable("Projelerim");
                 });
 
+            modelBuilder.Entity("MyWebSite.DAL.Entities.ProjePicture", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("DisplayIndex")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<int>("ProjeID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SubPicture")
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ProjeID");
+
+                    b.ToTable("ProjePicture");
+                });
+
             modelBuilder.Entity("MyWebSite.DAL.Entities.Yeteneklerim", b =>
                 {
                     b.Property<int>("ID")
@@ -195,6 +224,22 @@ namespace MyWebSite.DAL.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Yeteneklerim");
+                });
+
+            modelBuilder.Entity("MyWebSite.DAL.Entities.ProjePicture", b =>
+                {
+                    b.HasOne("MyWebSite.DAL.Entities.Proje", "Proje")
+                        .WithMany("ProjePictures")
+                        .HasForeignKey("ProjeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Proje");
+                });
+
+            modelBuilder.Entity("MyWebSite.DAL.Entities.Proje", b =>
+                {
+                    b.Navigation("ProjePictures");
                 });
 #pragma warning restore 612, 618
         }
