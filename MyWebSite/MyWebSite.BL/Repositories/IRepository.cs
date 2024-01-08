@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyWebSite.DAL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -11,7 +12,7 @@ namespace MyWebSite.BL.Repositories
     {
         public IQueryable<T> GetAll();
         public IQueryable<T> GetAll(Expression<Func<T, bool>> exp);
-        public T GetBy(Expression<Func<T, bool>> exp);
+		public T GetBy(Expression<Func<T, bool>> exp);
 
         public Task Add(T entity);
         public Task Update(T entity);
