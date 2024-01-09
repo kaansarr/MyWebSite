@@ -130,48 +130,41 @@
 		</div>
 		<div class="row">
 			<div class="isotope-wrapper">
-				@foreach (Proje p in Model.Projelerim)
-				{
-					<div class="isotope-box">
-						<div class="isotope-item" data-type="nature">
+				<div class="isotope-box">
+					@{
+						int count = 1;
+					}
+					@foreach (Proje p in Model.Projelerim)
+					{
+						<div class="isotope-item fa fa-search" data-type="nature">
 							<figure class="snip1321">
-								<img src="@p.Picture" alt="sq-sample26" />
+								<img src="@p.Picture" />
+							
+								@{
+									bool iconShowed = false;
+								}
+
+							</figure>
+							@foreach (var item in p.ProjePictures)
+							{
+
 								<figcaption>
-									<a href="@p.Link" target="_blank">
-										<i class="fa fa-github"></i>
+									<a href="@item.SubPicture"
+							   data-lightbox="image-@count"
+							   data-title="Caption">
+										@if (!iconShowed)
+										{
+											<p>Projeleri Görüntüle <i class="fa fa-search"></i></p>
+											iconShowed = true;
+										}
 									</a>
 
-									@if (!string.IsNullOrEmpty(p.Link2))
-									{
-										<a href="@p.Link2" target="_blank">
-											<i class="fa fa-youtube"></i>
-										</a>
-									}
-
-
 								</figcaption>
-							</figure>
-							<h2>@p.Name</h2>
-							<a href="/Home/DetailGallery/@p.ID"
-						   data-lightbox="@p.ProjePictures"
-						   data-title="Proje Fotoğrafları">
-								Proje Fotoğraflarına Git
-								<i class="fa fa-search"></i>
-
-								
-
-							</a>
-
-
-
-						
-
+							}
 						</div>
-					</div>
-					
-
-				}
-				
+						count++;
+					}
+				</div>
 			</div>
 		</div>
 	</div>
