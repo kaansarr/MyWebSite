@@ -61,17 +61,7 @@ namespace MyWebSite.WebUI.Controllers
 			return Redirect("/");
 		}
 
-		//[Route("/Home/DetailGallery/{id}")]
-		//public IActionResult DetailGallery(int id)
-		//{
-		//	var viewModel = new ProjeDetailViewModel
-		//	{
-		//		Proje = repoProje.GetBy(o => o.ID == id),
-		//		ProjePictures = repoProjePicture.GetAll().Where(p => p.ProjeID == id).OrderByDescending(o => o.ID).ToList()
-		//	};
-
-		//	return View(viewModel);
-		//}
+	
 
 
 

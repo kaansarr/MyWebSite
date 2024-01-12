@@ -56,6 +56,8 @@
 							<br />
 
 							<h4 style="font-size: 30px;">@h.Aciklama</h4>
+							<hr/>
+							<hr/>
 
 							<br />
 
@@ -106,9 +108,9 @@
 <style>
 	.isotope-box {
 		float: left;
-		width: 75%; /* İhtiyaca göre ayarlayın */
+		width: 75%; 
 		box-sizing: border-box;
-		padding: 40px; /* Öğeler arasındaki boşluğu ayarlamak için ihtiyaca göre ayarlayın */
+		padding: 40px; 
 	}
 
 	.isotope-item {
@@ -125,7 +127,7 @@
 			<h2>Projelerim</h2>
 			<div class="line-dec"></div>
 			<span style="font-size:20px">
-				Bu alanda projelerimin detaylarına ve videolarına ulaşabilirsiniz..
+				Bu alanda projelerimin fotoğraflarına, videolarına ve detaylarına üzerindeki iconlarından ulaşabilirsiniz.
 			</span>
 		</div>
 		<div class="row">
@@ -136,31 +138,39 @@
 					}
 					@foreach (Proje p in Model.Projelerim)
 					{
-						<div class="isotope-item fa fa-search" data-type="nature">
+						<div class="isotope-item" data-type="nature">
 							<figure class="snip1321">
 								<img src="@p.Picture" />
-							
+
 								@{
 									bool iconShowed = false;
 								}
+								<figcaption>
+									@foreach (var item in p.ProjePictures)
+									{
+										<a href="@item.SubPicture" data-lightbox="image-@count" data-title="Caption">
+											@if (!iconShowed)
+											{
+												<p>
+													<i class="fa fa-search" title="Proje Fotoğraflarına Git"></i>
+
+													<a href="@p.Link" target="_blank">
+														<i class="fa fa-github"></i> 
+													</a>
+													@if (!string.IsNullOrEmpty(p.Link2))
+													{
+														<a href="@p.Link2" target="_blank">
+															<i class="fa fa-youtube"></i>
+														</a>
+													}
+												</p>
+												iconShowed = true;
+											}
+										</a>
+									}
+								</figcaption>
 
 							</figure>
-							@foreach (var item in p.ProjePictures)
-							{
-
-								<figcaption>
-									<a href="@item.SubPicture"
-							   data-lightbox="image-@count"
-							   data-title="Caption">
-										@if (!iconShowed)
-										{
-											<p>Projeleri Görüntüle <i class="fa fa-search"></i></p>
-											iconShowed = true;
-										}
-									</a>
-
-								</figcaption>
-							}
 						</div>
 						count++;
 					}
@@ -169,6 +179,7 @@
 		</div>
 	</div>
 </section>
+
 
 
 

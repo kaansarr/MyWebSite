@@ -11,7 +11,7 @@
 <section class="section contact-me" data-section="section4">
 	<div class="container">
 		<div class="section-heading">
-			<h2>Contact Me</h2>
+			<h2>Benimle İletişime Geç</h2>
 			<div class="line-dec"></div>
 
 		</div>
@@ -59,15 +59,15 @@
 <script>
 	$(document).ready(function () {
 		$('#btn1').click(function () {
-			// Formdan verileri al
+			
 			var ad = $('#name').val();
 			var soyad = $('#email').val();
 			var konu = $('#subject').val();
 			var mesaj = $('#message').val();
 
-			// Formu AJAX kullanarak gönder
+			
 			$.ajax({
-				url: '/Home/Iletisim',  // Formun post edileceği URL'yi ayarlayın
+				url: '/Home/Iletisim',  
 				type: 'POST',
 				data: {
 					Ad: ad,
@@ -78,16 +78,16 @@
 				success: function (response) {
 					// AJAX isteği başarılı olduğunda SweetAlert göster
 					Swal.fire(
-						'Merhaba ' + ad + ' ' + soyad,
+						'Merhaba ' + ad + ' ',
 						'Mesajınız gönderildi! Teşekkür ederiz.',
 						'success'
 					);
 
-					// Formu sıfırla (isteğe bağlı)
+					
 					$('#contact')[0].reset();
 				},
 				error: function (error) {
-					// AJAX isteği başarısız olduğunda SweetAlert göster
+					
 					Swal.fire(
 						'Hata',
 						'Mesaj gönderirken bir hata oluştu. Lütfen tekrar deneyin.',
