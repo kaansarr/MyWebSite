@@ -15,7 +15,7 @@
 - Javascript
 
 
-Kullanıcı Arayüzü
+## Kullanıcı Arayüzü
 
 ![Screenshot 2024-06-26 124912](https://github.com/kaansarr/MyWebSite/assets/135230544/bb333d89-b953-4426-b525-663539c1472e)
 ![Screenshot 2024-06-26 125003](https://github.com/kaansarr/MyWebSite/assets/135230544/9820eea3-2e04-40ef-883e-d230ef84f55d)
@@ -24,7 +24,7 @@ Kullanıcı Arayüzü
 ![İletişim2](https://github.com/kaansarr/MyWebSite/assets/135230544/3f306943-7615-45a2-bb25-cdb70070f806)
 
 
-Admin Arayüzü
+## Admin Arayüzü
 
 ![İletişim3](https://github.com/kaansarr/MyWebSite/assets/135230544/03af1491-9ee3-4fe4-b946-0ba8f443170f)
 ![AdminYetenek](https://github.com/kaansarr/MyWebSite/assets/135230544/a5771828-0bdb-46b5-b12e-8930cbd1646e)
